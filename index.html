@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - SAKA Perfume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: linear-gradient(to right, #ededed, #f6cedb, #aacbe4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f2a7bf;
+        }
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 50px;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .navbar a:hover {
+        color: #f2a7bf;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+        
+        .container h1 {
+            font-size: 48px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .container p {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .btn {
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-primary {
+            background-color: #2d2d2d;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #444;
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        .btn-secondary:hover {
+            background-color: white;
+            color: #2d2d2d;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SAKA</div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+        <a href="#">Our Team</a>
+        <a href="#">About Us</a>
+        <a href="login.html" >Sign In</a>
+        </nav>
+    </header> 
+    <div class="container">
+        <h1>Discover <b>the Essence</b><br>of Elegance.</h1>
+        <p>Unveil the perfect fragrance that defines your personality with SAKA Perfume.</p>
+        <div class="btn-container">
+            <button class="btn btn-primary" onclick="location.href='register.html'">Sure, I'm in!</button>
+            <button class="btn btn-secondary" onclick="location.href='beranda.html'">Free Trial</button>
+        </div>
+    </div>
+</body>
+</html>

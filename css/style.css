@@ -1,4 +1,4 @@
-/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +7,11 @@
 }
 
 body {
-    background-color: #f4f1ee;
-    color: #333;
+    background: linear-gradient(to right, #ededed, #f6cedb, #aacbe4);
+    color: #d776b2;
+    text-align: center;
 }
 
-/* Header Section */
 .header {
     display: flex;
     justify-content: space-between;
@@ -48,16 +48,19 @@ body {
     color: #a40060;
 }
 
-
-/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    flex-wrap: wrap;
     padding: 150px 20px 100px;
-    background: linear-gradient(to right, #fff, #fce4ec, #e3f2fd);
+    background: linear-gradient(to right, #ededed, #f6cedb, #aacbe4);
+}
+
+.hero-content {
+    max-width: 500px;
+    text-align: left;
+    padding-right: 30px;
 }
 
 .hero h1 {
@@ -75,11 +78,11 @@ body {
 .hero .discount {
     font-size: 20px;
     font-weight: bold;
-    color: #d776b2;
+    color: #ff2b2b;
     margin-top: 20px;
 }
 
-.hero button {
+.hero .shop-now {
     margin-top: 20px;
     padding: 12px 25px;
     border: none;
@@ -90,11 +93,19 @@ body {
     border-radius: 5px;
 }
 
-.hero button:hover {
-    background-color: #d776b2;
+.hero .shop-now:hover {
+    background-color: #a40060;
 }
 
-/* Product Section */
+.hero-image img {
+    width: 500px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+
+
 .products {
     padding: 50px 20px;
     text-align: center;
@@ -114,11 +125,11 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
-    background-color: #ffffff;
+    background: linear-gradient(to right, #ededed, #f6cedb, #aacbe4);
 }
 
 .product {
-    background: linear-gradient(to right, #fff, #fce4ec, #e3f2fd);
+    background: #fff;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
